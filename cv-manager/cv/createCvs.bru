@@ -1,0 +1,23 @@
+meta {
+  name: createCvs
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/cvs
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Teresa Sommer 2",
+    "email": "tet@web.de",
+    "skills": ["typescript", "ORM"]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

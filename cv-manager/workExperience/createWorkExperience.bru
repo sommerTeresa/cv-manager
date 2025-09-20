@@ -1,0 +1,28 @@
+meta {
+  name: createWorkExperience
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/cvs/:cvId/work-experiences
+  body: json
+  auth: inherit
+}
+
+params:path {
+  cvId: aede831b-5c62-4f31-b0ff-43d5d6c874fe
+}
+
+body:json {
+  {
+    "institution": "TU DA",
+    "degree": "1.0",
+    "startDate": "01.01.2015",
+    "endDate": "01.01.2020"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,25 @@
+meta {
+  name: updateCvs
+  type: http
+  seq: 4
+}
+
+patch {
+  url: http://localhost:3000/cvs/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: aede831b-5c62-4f31-b0ff-43d5d6c874fe
+}
+
+body:json {
+  {
+    "phone": "123"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

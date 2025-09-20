@@ -1,0 +1,20 @@
+meta {
+  name: getEducationById
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:3000/cvs/:cvId/educations/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: b898567a-1559-4d81-8d09-3fc47ab464c9
+  cvId: aede831b-5c62-4f31-b0ff-43d5d6c874fe
+}
+
+settings {
+  encodeUrl: true
+}

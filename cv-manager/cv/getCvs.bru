@@ -1,0 +1,15 @@
+meta {
+  name: getCvs
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:3000/cvs
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

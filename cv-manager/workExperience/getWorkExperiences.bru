@@ -1,0 +1,19 @@
+meta {
+  name: getWorkExperiences
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:3000/cvs/:cvId/work-experiences
+  body: none
+  auth: inherit
+}
+
+params:path {
+  cvId: aede831b-5c62-4f31-b0ff-43d5d6c874fe
+}
+
+settings {
+  encodeUrl: true
+}
